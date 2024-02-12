@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tashbi</title> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto">
+    <!-- header area start -->
+    <header class="flex justify-center items-center text-center font-black text-5xl my-10  ">
+        <h1 class="bg-gradient-to-r from-cyan-500 to-blue-500 text-yellow-100">Digital Tasbih</h1>
+    </header>
+    <!-- header area end -->
+    <!-- main area start -->
+    <main class="flex lg:flex-row flex-wrap md:justify-between justify-center ">
+        <!-- subhanallah area start -->
+        <section id="subhanallah-container shadow-cyan-500/50 w-[100%] ">
+            <div class="py-16">
+                <h1 class="text-center font-bold text-xl">subhanallah</h1>
+                <p id="subhanallah-display" class="text-center text-lg my-5">0</p>
+                <div class="py-10">
+                    <button id="subhanallah-inc-btn" class="btn   bg-green-600 text-white rounded-lg">INCRIMENT</button>
+                    <button id="subhanallah-dic-btn" class="btn bg-red-500 text-white rounded-lg">DECRIMENT</button>
+                </div>
+            </div>
+        </section>
+        <!-- subhanallah area end -->
+        <!-- alhamdulliha area start -->
+        <section id="alhamdulliha shadow-cyan-500/50 w-[100%]">
+            <div class="py-16">
+                <h1 class="text-center font-bold text-xl">alhamdulliha</h1>
+                <p id="alhamdulliha-display" class="text-center text-lg my-5">0</p>
+                <div class="py-10">
+                    <button id="alhamdulliha-inc-btn" class="btn   bg-green-600 text-white rounded-lg">INCRIMENT</button>
+                    <button id="alhamdulliha-dic-btn" class="btn bg-red-500 text-white rounded-lg">DECRIMENT</button>
+                </div>
+            </div>
+        </section>
+        <!-- alhamdulliha area end -->
+        <!-- allahhuakbar area start -->
+        <section id="allahhuakbar-container shadow-cyan-500/50 w-[100%] ">
+            <div class="py-16">
+                <h1 class="text-center font-bold text-xl">allahuakbar</h1>
+                <p id="allahhuakbar-display" class="text-center text-lg my-5">0</p>
+                <div class="py-10">
+                    <button id="allahhuakbar-inc-btn" class="btn   bg-green-600 text-white rounded-lg">INCRIMENT</button>
+                    <button id="allahhuakbar-dic-btn" class="btn bg-red-500 text-white rounded-lg">DECRIMENT</button>
+                </div>
+            </div>
+        </section>
+        <!-- allahhuakbar area end -->
+    </main>
+    <footer class="flex justify-center">
+        <button id="reset-btn" class="btn bg-amber-300 text-black font-bold rounded-md ">RESET ALL TASBIH</button>
+    </footer>
+    <!-- main area end -->
+    <script src="./index.js"></script>
+</body>
+</html>
